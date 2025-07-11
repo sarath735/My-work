@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book My Hall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+    <div class="left">
+       <a href="#" style="text-decoration: none;color: black;font-size: 24px;font-weight: bold;margin-left: 2px;">Book My Hall</a> 
+      <a class="Home" href="#"style="text-decoration: none;color: black;font-size: 20px;">Home</a>
+      <a href="#"style="text-decoration: none;color: black;font-size: 20px;">My Hall</a>
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search for halls...">
+    </div>
+
+    <div class="right">
+      <a href="#"style="text-decoration: none;color: black;font-size: 20px;">Login</a>
+      <button class="btn btn-outline-primary" style="border-radius: 20px;font-size: 20px;">Create account</button>
+      <div class="profile-icon">
+        <img src="C:\Users\sarath\Downloads\handsome-bearded-businessman-rubbing-hands-having-deal.jpg" alt="User" class="profile-icon">
+       <i class="bi bi-person"></i>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="main-content">
+      <img src="C:\Users\sarath\Downloads\banquet-halls-vm-grand-mahal-event-space-5_15_436050-167403633834474.jpeg" alt="Anandha Grand Mahal" class="main-img">
+
+      <div class="hall-details">
+        <div class="info">
+          <p><strong>Hall Name:</strong> Anandha Grand Mahal</p>
+          <p><strong>Hall Type:</strong> Wedding hall</p>
+          <p><strong>Address:</strong> 100 Feet Road, Anna Nagar, Chennai – 600040</p>
+          <p><strong>Ph.no:</strong> 7871264098</p>
+          <p><strong>Email:</strong> Suresh@gmail.com</p>
+          <p><strong>Guest Capacity:</strong> 👥 500 👤 800</p>
+          <p><strong>Rooms:</strong> 4 AC Rooms</p>
+          <p><strong>Rent:</strong><br>
+            ₹18,000/full day <br>
+            ₹9000/Half day
+          </p>
+        </div>
+        <button class="book-btn" style="margin-top: 200px;width: 500px;">Book now</button>
+      </div>
+    </div>
+
+    <div class="thumbnails">
+      <img src="C:\Users\sarath\Downloads\ss20230323-24949-31l24w.jpg" alt="">
+      <img src="C:\Users\sarath\Downloads\OIP (1).jpeg" alt="">
+      <img src="C:\Users\sarath\Downloads\anandha-grand-lodge-tiruchchendur-pic-1.jpeg" alt="">
+      <img src="C:\Users\sarath\Downloads\bb2ea43d65e00039d3d915551d4db308.jpg" alt="">
+    </div>
+
+    <div class="tabs">
+      <span class="active">Hall info</span>
+      <span>Description</span>
+      <span>Reviews</span>
+    </div>
+
+    <div class="info-text">
+      <p>
+        <ul>
+        
+       <li> Spacious AC wedding hall with seating for 500 guests, dining, parking, and power backup. Ideal for grand celebrations in Chennai<li>
+         Elegant wedding venue in Vadapalani with stage, dining, and modern facilities. Perfect for traditional and contemporary functions.
+    <li>A well-equipped marriage hall with AC, generator, rooms, and ample parking. Affordable and centrally located.</li>
+<li>Traditional yet modern hall with all amenities including dining, rooms, and lift. Suitable for weddings and receptions.</li>
+<li>Budget-friendly wedding hall with AC, dining hall, and guest rooms. Great location with easy accessibility.</li>
+
+    </ul>
+    </p>
+    </div>
+    </div>
+  </main>
+
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: #fff;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar h1 {
+  font-size: 20px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar input[type="text"] {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.navbar button {
+  padding: 6px 12px;
+  background-color: white;
+  border: 2px solid #007BFF;
+  border-radius: 20px;
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px 40px;
+}
+
+.main-content {
+  display: flex;
+  gap: 40px;
+}
+
+.main-img {
+  width: 60%;
+  border-radius: 8px;
+}
+
+.hall-details {
+  width: 40%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hall-details .book-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.thumbnails img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs span {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.tabs .active {
+  border-bottom: 3px solid #000;
+}
+
+.info-text {
+  margin-top: 10px;
+}
+
+ .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar .left,
+    .navbar .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar .search-container input {
+      padding: 8px 12px;
+      border: 1px solid #F5F5F5;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 511px;
+      border-color: #DADADA;
+       margin-left: -200px;
+
+
+    }
+
+    .navbar .btn-primary {
+      background-color: #007BFF;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      
+    }
+
+    .navbar .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .profile-icon {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background-color: #4a4747;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #d1d0d0;
+      cursor: pointer;
+    }
+
+
+</style>
+</body>
+</html>

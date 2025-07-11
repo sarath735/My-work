@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book my hall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<html>
+    <body>
+      
+
+  
+ <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="left">
+      <a href="#" class="logo">Book My Hall</a>
+      <a href="#">Home</a>
+      <a href="#">My bookings</a>
+      <a href="#">My hall</a>
+      <a href="#">Find halls</a>
+    </div>
+
+
+    <div class="right">
+      <a href="#">Login</a>
+      <button class="btn-primary">Create account</button>
+      <div class="profile-icon"><i class="bi bi-person-fill"></i></div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-layout">
+    
+    <!-- SIDEBAR FILTERS -->
+    <aside class="sidebar">
+      <h2>Filters</h2>
+
+      <div class="range-slider">
+        <h4>Price range</h4>
+        <span>Min 15,000</span>
+        <input type="range" min="15000" max="35000" value="20000">
+        <span>Max 35,000</span>
+      </div>
+
+      <h4>Facilities</h4>
+      <label><input type="checkbox"> AC</label>
+      <label><input type="checkbox" checked> Non AC</label>
+      <label><input type="checkbox"> Rooms Available</label>
+      <label><input type="checkbox"> Lift Facility</label>
+      <label><input type="checkbox"> Decoration Service</label>
+      <label><input type="checkbox"> DJ / Sound System</label>
+      <label><input type="checkbox"> Stage Available</label>
+
+      <h4>Guest Capacity</h4>
+      <label><input type="checkbox"> Less than 100</label>
+      <label><input type="checkbox" checked> 100–300</label>
+      <label><input type="checkbox"> 300–500</label>
+      <label><input type="checkbox"> 500–1000</label>
+    </aside>
+
+    <!-- HALL CARDS -->
+    <section class="hall-cards">
+      <h3>Halls in chennai</h3>
+      <div class="cards">
+        <div class="card">
+          <img src="C:\Users\sarath\Downloads\groom-bride-s-wedding-table-decorated-with-flowers-candles.jpg" alt="hall" />
+          <h4>Little Lotus Hall</h4>
+          <p>Mini hall –  Kanchipuram Main Road, Tamil Nadu - 631501 Chennai</p>
+          <pre class="card-reviews" style="font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reviews <span class="stars">★★★☆☆</span></pre>
+  <strong style="font-weight: 700;">25,000 / Per day</strong>
+        </div>
+        <div class="card">
+          <img src="C:\Users\sarath\Downloads\Mohana Mahal _ Chennai’s Premiere Wedding Hall - Mohana Mahal.jpeg" alt="hall" />
+          <h4>Thanga Mandapam</h4>
+         <p>Wedding hall </p>
+    <p>Trichy Road, Singanallur, Coimbatore 641005</p>
+          <pre class="card-reviews" style="font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reviews <span class="stars">★★★☆☆</span></pre>
+  <strong style="font-weight: 700;">25,000 / Per day</strong>
+        </div>
+        <div class="card">
+          <img src="C:\Users\sarath\Downloads\banquet-halls-vm-grand-mahal-event-space-5_15_436050-167403633834474.jpeg" alt="hall" />
+          <h4>Sakthi Conference</h4>
+         <p>Wedding hall </p>
+    <p>Trichy Road, Ramanathapuram, Coimbatore – 641045</p>
+          <pre class="card-reviews" style="font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reviews <span class="stars">★★★☆☆</span></pre>
+  <strong style="font-weight: 700;">25,000 / Per day</strong>
+        </div>
+        <div class="card">
+          <img src="C:\Users\sarath\Downloads\classic-luxury-style-restaurant-with-tables-chairs.jpg" alt="hall" />
+          <h4>Elite Hall</h4>
+          <p>Mini hall</p>
+    <p>No. 27, Anna Salai, Mount Road, Chennai – 600002</p>
+          <pre class="card-reviews" style="font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reviews <span class="stars">★★★☆☆</span></pre>
+  <strong style="font-weight: 700;">25,000 / Per day</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
+
+ 
+
+
+<style>
+   * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.navbar .left,
+.navbar .right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.search-container input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 250px;
+}
+
+.btn-primary {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.profile-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* MAIN LAYOUT */
+.main-layout {
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+  margin-bottom: 16px;
+}
+
+.sidebar h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.sidebar label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* RANGE SLIDER */
+.range-slider input[type="range"] {
+  width: 100%;
+}
+
+/* CARDS SECTION */
+.hall-cards {
+  flex: 1;
+}
+
+.hall-cards h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  width: calc(25% - 20px);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+ width: 260px;
+  height: 400px;
+padding: 8px;
+
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  height: 200px;
+}
+
+.card h4 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 4px;
+
+}
+
+.card strong {
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+}
+.card-reviews span{
+
+color: gold;
+
+
+}
+
+
+
+</style>
+</body>
+</html>

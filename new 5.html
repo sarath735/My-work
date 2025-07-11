@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book my hall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<html>
+<body>
+
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar .left,
+    .navbar .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar .search-container input {
+      padding: 8px 12px;
+      border: 1px solid #F5F5F5;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 511px;
+      border-color: #DADADA;
+       margin-left: -200px;
+
+
+    }
+
+    .navbar .btn-primary {
+      background-color: #007BFF;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .navbar .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .profile-icon {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background-color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #333;
+      cursor: pointer;
+    }
+ 
+.hero {
+  background-image: url(C:\Users\sarath\Downloads\luxurious-dinner-hall-with-large-crystal-chandelier.jpg); /* Replace with your image */
+ 
+  background-position: center;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay-form {
+  background: #ffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+.overlay-form h2 {
+  margin-bottom: 12px;
+}
+
+.overlay-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.search-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px;
+  background-color: #1E90FF;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+
+.info-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #f8eded;
+ padding-right: 400px;
+ 
+}
+
+.carousel-image img {
+  border-radius: 12px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.info-text {
+  margin-left: 40px;
+  max-width: 400px;
+}
+
+.info-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.popular {
+  padding: 40px 20px;
+  background: #ffffff;
+}
+
+.popular h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  width: 260px;
+  height: 400px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  height: 200px;
+}
+
+.card h4 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.card strong {
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 8px;
+  width: calc(25% - 15px); /* 4 cards per row, considering gap */
+ height: auto;
+}
+
+.card-reviews span{
+
+color: gold;
+
+
+}
+
+
+  </style>
+
+<nav class="navbar">
+    <div class="left">
+       <a href="#" style="text-decoration: none;color: black;font-size: 24px;font-weight: bold;margin-left: 2px;">Book My Hall</a> 
+      <a href="#"style="text-decoration: none;font-size: 20px;">Home</a>
+      <a href="#"style="text-decoration: none;color: black;font-size: 20px;">My bookings</a>
+      <a href="#"style="text-decoration: none;color: black;font-size: 20px;">My hall</a>
+      <a href="#"style="text-decoration: none;color: black;font-size: 20px;">Find halls</a>
+    </div>
+
+   
+
+    <div class="right">
+      <a href="#"style="text-decoration: none;color: black;font-size: 20px;">Login</a>
+      <button class="btn btn-outline-primary" style="border-radius: 20px;font-size: 20px;">Create account</button>
+      <div class="profile-icon">
+        <i class="bi bi-person-fill"></i>
+      </div>
+    </div>
+  </nav>
+  
+<section class="hero">
+    <div class="overlay-form">
+      <h2>Hall Types</h2>
+      <select>
+        <option>Wedding Hall</option>
+        <option>Meeting Hall</option>
+        <option>Mini Hall</option>
+      </select>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Select State</label>
+          <select>
+            <option>Tamil Nadu</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Select District</label>
+          <select>
+            <option>Chennai</option>
+          </select>
+        </div>
+      </div>
+
+     <a href="file:///C:/Users/sarath/Desktop/sarath/css%20new/new3.html"target="_blank" rel="noopener noreferrer"> <button class="search-btn">Search</button></a>
+    </div>
+  </section>
+
+<section class="info-carousel">
+    <div class="carousel-image">
+      <img src="C:\Users\sarath\Downloads\Which is the best banquet hall in Hyderabad to celebrate an event_.jpeg" alt="hall" />
+    </div>
+    <div class="info-text">
+      <h3 style="font-family: cursive;">Book My Hall lets you discover and book mini, wedding, and meeting halls with ease offering the right space for every occasion.</h3>
+    </div>
+  </section>
+<br><br>
+
+
+<section class="popular">
+    <h3>Popular Halls in all district</h3>
+    <div class="cards">
+
+<div class="cards">
+  <div class="card" style="margin-left: -150px;">
+    <img src="C:\Users\sarath\Downloads\decorated-wedding-tables-hall-interior.jpg" alt="hall">
+    <h4>Little Lotus Hall</h4>
+     <p>Mini hall</p>
+    <p>Kanchipuram Main Road,Near Rajalakshmi Theatre,Tamil Nadu – 631501</p>
+   <pre class="card-reviews" style="font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reviews <span class="stars">★★★☆☆</span></pre>
+  <strong style="font-weight: 700;">25,000 / Per day</strong>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\sarath\Downloads\Mohana Mahal _ Chennai’s Premiere Wedding Hall - Mohana Mahal.jpeg" alt="hall">
+    <h4>Thanga Mandapam Hall</h4>
+    <p>Wedding hall </p>
+    <p>Trichy Road, Singanallur, Coimbatore 641005</p>
+    <pre class="card-reviews" style="font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reviews <span class="stars">★★★☆☆</span></pre>
+  <strong style="font-weight: 700;">18,000 / Per day</strong>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\sarath\Downloads\Nantong Marriott — ERIC MICHAEL JOHNSON.jpeg" alt="hall">
+    <h4>Sakthi Conference Hall</h4>
+    <p>Wedding hall </p>
+    <p>Trichy Road, Ramanathapuram, Coimbatore – 641045</p>
+   <pre class="card-reviews" style="font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reviews <span class="stars">★★★☆☆</span></pre>
+  <strong style="font-weight: 700;">18,000 / Per day</strong>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\sarath\Downloads\Which is the best banquet hall in Hyderabad to celebrate an event_.jpeg" alt="hall">
+    <h4>Elite Business Hall</h4>
+    <p>Mini hall</p>
+    <p>No. 27, Anna Salai, Mount Road, Chennai – 600002</p>
+    <pre class="card-reviews" style="font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reviews <span class="stars">★★★☆☆</span></pre>
+  <strong style="font-weight: 700;">22,000 / Per day</strong>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
